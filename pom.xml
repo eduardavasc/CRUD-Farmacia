@@ -12,7 +12,7 @@
 	<artifactId>projetofarmacia</artifactId>
 	<version>0.0.1</version>
 	<name>projetofarmacia</name>
-	<description>Aplicando conceitos de Spring em um projeto de loja de games</description>
+	<description>Aplicando conceitos de Spring em um projeto de farmacia</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -53,6 +53,11 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<image>
+						<builder>paketobuildpacks/builder-jammy-base:latest</builder>
+					</image>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
